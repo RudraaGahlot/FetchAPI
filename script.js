@@ -30,6 +30,23 @@ fetch('https://jsonplaceholder.typicode.com/comments')
 })
 .catch(error => console.error(error));
 
+// OR we can also use async await try and catch method to fetch data
+
+{/* async function fetchData(){
+    try{
+        const response = await fetch('https://jsonplaceholder.typicode.com/comments')
+        const data= await response.json()
+        console.log(data);
+    }catch(error){
+        console.log("E :", error);
+        
+
+    }
+}
+fetchData();
+    */}
+        
+
 // example 3: Sending data to server
 // POST request
 fetch('https://jsonplaceholder.typicode.com/comments', {
